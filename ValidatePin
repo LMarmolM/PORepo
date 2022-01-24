@@ -1,0 +1,18 @@
+package adfafd;
+
+import java.util.Scanner;
+
+public class main {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		  Scanner scanner = new Scanner(System.in);
+	      String n = scanner.next();
+	      System.out.println(validate(n));
+	}
+	
+	public static boolean validate(String exp){
+		return exp.matches("[0-9]{4}")||exp.matches("[0-9]{6}"); 
+	}
+}
